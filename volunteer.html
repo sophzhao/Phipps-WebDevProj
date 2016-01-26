@@ -1,0 +1,126 @@
+<!DOCTYPE html>     <!-- Tells the browser this is HTML 5 -->
+<html lang="en">    <!-- Root of the html document and is in English -->
+
+<head> 
+    <!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+<!--  Professional Website
+      Created by: Sophie Zhao
+      Date:  March 2015 -->
+
+    <!-- META tags help search engines identify your content more easily -->
+    <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="author" content="Sophie Zhao ">
+    <meta name="keywords" content="about, Phipps Conservatory, volunteer, intern">
+    <meta name="description" content="Volunteering at Phipps">
+
+    <title>Volunteering</title>
+
+    <!-- Link to CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <!-- The href=" " attribute is where you placed the style sheet. 
+    The rel="stylesheet" attribute just says to look for a stylesheet. 
+    The type="text/css" tells the browser the mime type of the document, which is a cascading style sheet. -->
+
+</head>
+    
+<body>
+    <!-- The BODY is where the main content goes -->
+<div id="container">
+
+    <div id="top_row">
+
+    <header>
+
+    <div id="social_media">
+    <a href="http://www.facebook.com/phippsconservatory" target="_blank"><img src="images/facebook.png" height="30" width="30"></a>
+    <a href="https://twitter.com/PhippsNews" target="_blank"><img src="images/twitter.png" height="30" width="30"></a>
+    <a href="http://www.youtube.com/user/phippsconservatory" target="_blank"><img src="images/youtube.png" height="30" width="30"></a>
+    <a href="https://www.flickr.com/photos/phippsconservatory/" target="_blank"><img src="images/flickr.png" height="30" width="30"></a>
+    <a href="https://instagram.com/phippsconservatory/" target="_blank"><img src="images/instagram.png" height="30" width="30"></a>
+    </div>
+
+        <a href="homepage.html">
+        <img id ="logo" src="Images/greenlogo.png" alt="logo">
+        </a>
+        <h3>Where beauty comes naturally</h3>
+    </header>
+
+    <img id="full-screen-background-image" src="Images/phippsflowers.jpg" alt="full screen background image" /> 
+
+    <nav> 
+        <a href="about.html">About</a> 
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a> 
+        <a class="selected" href="volunteer.html">Volunteer</a> 
+        <a href="visit.html">Visit</a> 
+    </nav>
+
+    </div>
+
+    <div id="content">
+
+    <h4>Volunteer Opportunities</h4>
+
+    <h3>Volunteer to gain knowledge in the areas of:</h3>
+    <ul style="list-style-type:square">
+        <li>plant science</li>
+        <li>environmental issues</li>
+        <li>education and communication</li>
+        <li>sustainability</li>
+        <li>and vegetable gardening</li>
+        </ul>
+
+      <p>Please fill out the contact form below.</p>
+      
+      <form>
+      
+      <fieldset>
+          <legend>Volunteer Registration</legend>
+          <label for="uname">Your name:</label> <br/>
+          <input type="text" id="uname" name="uname" value="Your Name" size="20" maxlength ="250" required><br/><br/>
+          <label for="txtDate">Your zipcode:</label> <br>
+          <input type="text" id="txtDate" name="txtZipcode" value="" size="5" maxLength="5"><br/><br/>
+          <label for="email">Please provide your email address:</label><br/>
+          <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+          <label for="source">How do you hope to be involved?</label>
+          <select name="source">
+              <option value="Care-taking" selected>Care-taking</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Event planning">Event planning</option>
+              <option value="Sanitation">Sanitation</option><br/>
+          </select><br/><br/>
+          <label>Please indicate if you want to receive weekly newsletters:</label><br/>
+          <input type="checkbox" id="signup" name="signup" value="yes">Yes, please update me!<br/><br/>
+          <input type ="image" src="images/submit.png" alt="Submit" name= "btnimage" value ="Submit">
+          <form action="MAILTO:generalinformation@pc.org">
+
+      </fieldset>
+      
+      </form>
+
+    </div>
+
+    <div id="special_sidebar">
+
+    <h3>Student Testimonials</h3>
+
+
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit dolor leo, ac accumsan lorem consequat eget. " -Annie Plant, CMU volunteer</p>
+
+    <p>"Etiam posuere lacinia risus, ut cursus lorem. Donec sed justo eget sapien imperdiet cursus nec ac tortor. " -Naomi Wreath, Duquense Intern</p> 
+        <a href="http://www.phipps.conservatory.org" target="_blank"><strong>Phipps Conservatory</strong></a><br/>
+        One Schenley Drive<br/>
+        Pittsburgh, PA 15213<br/>
+        General Info: 412-622-6914<br/>
+        Fax: 412-622-7363<br/>
+        <a href="mailto:facilities@phipps.conservatory.org" target="_blank">facilities@phipps.conservatory.org</a><br/>
+    </div> <!--Close sidebar  -->
+
+    <footer> <!-- Footer is new tag in HTML 5 -->
+        &copy; Sophie Zhao 2015
+    </footer>
+
+</div> <!-- Close container --> 
+</body>
+
+</html>

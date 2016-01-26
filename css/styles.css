@@ -1,0 +1,242 @@
+/* 	CSS Styling for the 67-250 Web Development Project */
+
+
+/* Enter CSS code in this file */
+/*
+body {
+    font-family: "Gill Sans", Gill Sans MT, Arial, sans-serif;
+    font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+/*    line-height: 1.7em;  The line-height property in CSS controls the space between lines of text. It is often set in a unitless value (e.g. line-height: 1.4; ) 
+    color: #000000;
+}
+*/
+
+/*  CSS Styling for the 67-250 Web Development Project */
+
+
+/* Enter CSS code in this file */
+/*
+body {
+    font-family: "Gill Sans", Gill Sans MT, Arial, sans-serif;
+    font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+/*    line-height: 1.7em;  The line-height property in CSS controls the space between lines of text. It is often set in a unitless value (e.g. line-height: 1.4; ) 
+    color: #000000;
+}
+*/
+
+html, body {
+    font-family: "Gill Sans", Gill Sans MT, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.7em;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+#logo {
+    height: 15%;
+    width: 15%;
+}
+
+#full-screen-background-image {
+    z-index: -999;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#container {
+    width: 80%;
+    margin: 5px auto; 
+}
+
+/* The top row - spans all columns for header and nav */
+#top_row {
+    border-bottom: 1px dotted #ccc;
+    padding: .5em .5em 3em .5em; 
+}
+
+#top_row header {
+    margin-bottom: -2.5em;
+}
+
+#top_row h1 {
+    color: #0AA388; 
+    font-size: 3.75em; 
+    letter-spacing: -2px; 
+}
+
+#top_row h3 {
+    font-size: 1.125em;
+    font-weight: 200; 
+}
+
+#top_row nav {
+    float: right; 
+    background: #F1E3C5
+}
+
+#top_row nav a {
+    text-decoration: none;
+    font-size: 1.125em;
+    font-weight: 400;
+    padding: 20px;
+    color: #000000;
+}
+
+#top_row nav a.selected {
+    background: #ed9b33;
+    color: #A68462; 
+}
+    
+#top_row nav a.selected:hover {
+    background: #ed9b33;
+    color: #A68462; 
+}
+
+#top_row nav a:hover {  
+    background: #F1E3C5;
+    color: #ed9b33;
+}
+
+#social_media {
+    float: right;
+}
+
+#sidebar {
+    background-color: #F1E3C5;
+/*    float: right;*/
+    padding: 1em;
+    font-size: .875em;  
+    width: 18%; 
+    position: absolute; 
+    margin-left: 59%;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+#sidebar h3 {
+    font-size: 1.125em;
+    border-bottom: 1px dotted #ccc;
+}
+
+#special_sidebar {
+    background-color: #F1E3C5;
+    float: right;
+    padding: 1em;
+    font-size: .875em;  
+    width: 18%; 
+    position: absolute; 
+    margin-left: 59%;
+}
+
+#special_sidebar a:hover {
+    text-decoration: underline;
+}
+
+#special_sidebar h3 {
+    font-size: 1.125em;
+    border-bottom: 1px dotted #ccc;
+}
+
+#content {
+    background-color: #F1E3C5;
+    }
+
+#content a {
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+    color: #000;
+    }
+
+#embeddedPhoto {
+    float: left;
+    width: 60%;
+    height: auto;
+}
+
+#cropfront {
+    float: right;
+    width: 60%;
+    height: auto;
+}
+
+#phipps1 {
+    float: center;
+    width: 97%;
+    height: auto;
+}
+
+#content {
+    float: left;
+    width: 68%;
+    margin: 0;
+    padding: 1em;
+    border-right: 1px dotted #ccc;
+}
+
+#content h3 {
+    text-decoration: none;
+    font-family: Gill Sans MT, serif;
+    font-size: 1.5em;
+    margin: 20px 0 0px 0;
+    font-weight: normal;
+}
+
+#content img {
+    float: left; 
+    margin: 1em;
+}
+
+table {
+    width: 75%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ed9b33;
+    border-spacing: 3px;
+    margin: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+th {
+    height:40px;
+}
+
+th, td {
+    padding: 2px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+}
+
+#forest {
+    float: left;
+    width: 35%;
+    height: auto;
+}
+
+#spring {
+    float: right;
+    width: 35%;
+    height: auto;
+}
+
+footer {
+    clear: both; 
+    margin: 0;
+    padding: .5em;
+    color: #F1E3C5;
+    font-variant: small-caps; 
+    font-size: .80em;
+    text-align: center;
+    border-top: 1px dotted #cccccc;

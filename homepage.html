@@ -1,0 +1,188 @@
+<!DOCTYPE html>     <!-- Tells the browser this is HTML 5 -->
+<html lang="en">    <!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+<!--  Professional Website
+      Created by: Sophie Zhao
+      Date:  March 2015 -->
+
+    <!-- META tags help search engines identify your content more easily -->
+    <meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="author" content="Sophie Zhao">
+    <meta name="keywords" content="College Volunteer, Phipps, conversatory">
+    <meta name="description" content="Phipps College Center">
+
+    <!-- The title will appear in the menu bar of the browser -->
+    <title>Phipps Conservatory</title>
+    <!-- Link to CSS-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/modules/exporting.js"></script>
+    <script type="text/javascript">
+$(function () {
+    $('#container-graph').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'College Students Visits for 2014'
+        },
+        xAxis: {
+            categories: ['CMU', 'Pitt', 'Duquensne'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Number of Visits',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ''
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 100,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Jan',
+            data: [122, 143, 49]
+        }, {
+            name: 'Feb',
+            data: [140, 152, 63]
+        }, {
+            name: 'Mar',
+            data: [112, 97, 41]
+        }, {
+            name: 'Apr',
+            data: [110, 83, 31]
+        }, {
+            name: 'May',
+            data: [201, 212, 67]
+        }, {
+            name: 'Jun',
+            data: [13, 43, 4]
+        }, {
+            name: 'Jul',
+            data: [28, 29, 8]
+        }, {
+            name: 'Aug',
+            data: [128, 111, 101]
+        }, {
+            name: 'Sept',
+            data: [98, 67, 68]
+        }, {
+            name: 'Oct',
+            data: [70, 93, 76]
+        }, {
+            name: 'Nov',
+            data: [99, 92, 56]
+        }, {
+            name: 'Dec',
+            data: [105, 83, 71]
+                                                                                                            
+        }]
+    });
+});
+    </script>
+
+</head>
+    
+<body>
+            
+<div id="container">
+    
+    <div id="top_row">
+    
+    <header>
+
+    <div id="social_media">
+    <a href="http://www.facebook.com/phippsconservatory" target="_blank"><img src="images/facebook.png" height="30" width="30"></a>
+    <a href="https://twitter.com/PhippsNews" target="_blank"><img src="images/twitter.png" height="30" width="30"></a>
+    <a href="http://www.youtube.com/user/phippsconservatory" target="_blank"><img src="images/youtube.png" height="30" width="30"></a>
+    <a href="https://www.flickr.com/photos/phippsconservatory/" target="_blank"><img src="images/flickr.png" height="30" width="30"></a>
+    <a href="https://instagram.com/phippsconservatory/" target="_blank"><img src="images/instagram.png" height="30" width="30"></a>
+    </div>
+
+        <a href="index.html">
+        <img id="logo" src="Images/greenlogo.png" alt="logo">
+        </a>
+        <h3>Where beauty comes naturally</h3>
+    </header>
+
+    <img id="full-screen-background-image" src="Images/phippsflowers.jpg" alt="full screen background image" /> 
+    
+    <nav> 
+        <a href="about.html">About</a> 
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a> 
+        <a href="volunteer.html">Volunteer</a> 
+        <a href="visit.html">Visit</a> 
+    </nav>
+
+    </div>
+    
+    <div id="content">
+        
+        <div id="welcome">
+
+        Welcome!
+
+        <div id="container-graph"></div> <!-- closes container-graph-->
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <img src="Images/phipps1.jpg" align="left" id="phipps1"><br/>
+        
+        <p> In Pittsburgh, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+                
+    </div> <!-- Close content -->
+    
+    <div id="sidebar">
+        <a class="twitter-timeline" href="https://twitter.com/PhippsNews" data-widget-id="581049395321397248">Tweets by @PhippsNews</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+        <a href="http://www.phipps.conservatory.org" target="_blank"><strong>Phipps Conservatory</strong></a><br/>
+        One Schenley Drive<br/>
+        Pittsburgh, PA 15213<br/>
+        General Info: 412-622-6914<br/>
+        Fax: 412-622-7363<br/>
+        <a href="mailto:facilities@phipps.conservatory.org" target="_blank">facilities@phipps.conservatory.org</a><br/>
+    </div> <!--Close sidebar  -->
+
+    <footer> <!-- Footer is new tag in HTML 5 -->
+        &copy; Sophie Zhao 2015
+    </footer>
+
+</div> <!-- Close container --> 
+</body>
+
+</html>
